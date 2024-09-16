@@ -56,25 +56,24 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
     fs.writeFileSync(gifPath, response.data);
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     api.changeNickname(`[ ${global.config.PREFIX} ] • ➠${(!global.config.BOTNAME) ? "bot" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
-    return api.sendMessage("চলে এসেছি আমি পিচ্চি জুবায়ের তোমাদের মাঝে🤭!", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
+    return api.sendMessage("চলে এসেছি আমি পিচ্চি সাকিন তোমাদের মাঝে🤭! সোয়াগাত তো কারো হামারা🥱", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\nAssalamualaykum☘️
 <------------------------------>  
-BOT CONNECTED SUCCESFUL !!! 
+সা্ঁকি্ঁন্ঁ⎯͢⎯⃝🪽 CONNECTED SUCCESFUL !!! 
 
-APPROVAL ALLOW IN THIS GROUP!!!
-<------------------------------>\n\nTO VIEW ANY COMMAND Use👉${global.config.PREFIX}help\nSee command👉 ${global.config.PREFIX}command
-\n\EXAMPLE:👇\n${global.config.PREFIX}admin (information)\n${global.config.PREFIX}islam (video)\n${global.config.PREFIX}tik (link)\n${global.config.PREFIX}fbvideo (link)
+RE-ADD ALLOW IN THIS GROUP!!!
+
+NEVER TRY TO SPAM WITH ME‼️
+
 <------------------------------>
 AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
 
-DEVELOPER : Xobaer Zone 
+DEVELOPER : SAKIN 
 
-🟣Facebook Account Link: 
+🟣Facebook Account Link:
+https://www.facebook.com/profile.php?id=100073238456269
 
-https://www.facebook.com/XobaerAhmad?mibextid=ZbWKwL
 
-🔵WHATSAPP NUMBER: wa.me/+201061284766
-
-🟢SUPPORT EMAIL: officialxobaer2007@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
+🟢SUPPORT EMAIL: nursakin772@gmail.com`, attachment: fs.createReadStream(gifPath)}, threadID));
   }})
 .catch(error => {
     console.error(error);
