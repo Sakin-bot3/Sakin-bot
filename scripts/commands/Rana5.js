@@ -28,7 +28,7 @@ const media = (
 
 	if (body.indexOf("🥰")==0 || body.indexOf("🤩")==0 || body.indexOf("😍")==0 || body.indexOf("error-king")==0 || body.indexOf("xobaer")==0 || body.indexOf("")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0 || body.indexOf(" ")==0) {
 		var msg = {
-				body: "_Xobaer 😕🫵",
+				body: "_Sᴀkɪɴ😕🫵",
 				attachment: media
 			}
 			api.sendMessage( msg, threadID, messageID);
