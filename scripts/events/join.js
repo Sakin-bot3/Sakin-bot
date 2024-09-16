@@ -105,11 +105,11 @@ https://www.facebook.com/profile.php?id=100073238456269
         let avtAnime = (await axios.get(encodeURI(
           `https://graph.facebook.com/${event.logMessageData.addedParticipants[o].userFbId}/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`), { responseType: "arraybuffer" })).data;
         var ok = [
-          'https://imgur.com/a/pVLjLqN',
-          'https://imgur.com/a/pVLjLqN',
-          'https://imgur.com/a/pVLjLqN',
-          'https://imgur.com/a/pVLjLqN',
-          'https://imgur.com/a/pVLjLqN'
+          'https://i.postimg.cc/rFyFDsrj/lv-0-20240909141336.gif',
+          
+          
+        
+  
         ]
         let background = (await axios.get(encodeURI(`${ok[Math.floor(Math.random() * ok.length)]}`), { responseType: "arraybuffer", })).data;
         fs.writeFileSync(pathAva, Buffer.from(avtAnime, "utf-8"));
