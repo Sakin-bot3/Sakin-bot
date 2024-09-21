@@ -1,7 +1,7 @@
 const fs = require("fs");
 module.exports = {
   config:{
-	name: "bot video",
+	name: "npx2",
         version: "1.0.1",
         prefix: false,
 	permssion: 0,
